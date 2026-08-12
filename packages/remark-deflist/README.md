@@ -98,11 +98,11 @@ import { unified } from 'unified'
 import markdown from 'remark-parse'
 import html from 'rehype-stringify'
 import remark2rehype from 'remark-rehype'
-import meta from 'remark-meta'
+import deflist from 'remark-deflist'
 
 unified()
   .use(markdown)
-  .use(meta)
+  .use(deflist)
   .use(remark2rehype)
   .use(html)
 ```
